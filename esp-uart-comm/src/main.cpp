@@ -1,13 +1,12 @@
 #include <Arduino.h>
 
-//#define RXD2 16
-//#define TXD2 17
-
 void setup() 
 {
   Serial.begin(115200);
 
-  Serial2.begin(9600);//, SERIAL_8N1, RXD2, TXD2);
+  // On the ESP32, you can redefine UARTs if you want, but
+  // this will default to 8N1, RXD2 on pin 16; TXD2 on pin 17
+  Serial2.begin(115200);
 }
 
 void loop() 

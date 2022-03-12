@@ -10,8 +10,7 @@ void loop()
 {
   while (Serial1.available()) 
   {
-    char a = Serial1.read();
-    Serial.print(a);
+    Serial.print(Serial1.read());
   }
 
   while (Serial.available()) 
