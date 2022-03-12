@@ -1,3 +1,8 @@
+/**
+ * A simple 'pass-through' serial connector. It will print whatever it reads on Serial1
+ * to Serial and vice versa.
+ * */
+
 #include <Arduino.h>
 
 void setup() 
